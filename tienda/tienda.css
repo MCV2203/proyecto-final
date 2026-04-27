@@ -6,6 +6,77 @@ body {
     margin: 0;
 }
 
+.menu-superior {
+    background: #000e5a;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nombre-web {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.enlaces-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.boton{
+  color: #ffd814;
+  background-color: #ffd814;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+
+.portada {
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), #151d4d), url("billetes.webp");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.contenido-portada {
+    max-width: 800px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .bloque-info {
   margin: 0 30px;
 }
@@ -27,31 +98,8 @@ body {
   justify-content: center;
 }
 
-.menu-superior {
-    background: #000e5a;
-    color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 5%;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-.nombre-web {
-    font-size: 24px;
-    font-weight: bold;
-}
-
 .nombre-web span {
     color: #ffd814;
-}
-
-.enlaces-nav {
-    display: flex;
-    list-style: none;
-    margin: 0;
 }
 
 .enlaces-nav li a {
@@ -67,18 +115,6 @@ body {
 .enlaces-nav li a:hover {
     background-color: #ff8800;
     transform: scale(1.2);
-}
-
-.portada {
-    height: 60vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), #151d4d), url("images/punto.png");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-align: center;
 }
 
 .portada h1 {
@@ -197,20 +233,8 @@ h2 {
     margin-top: 10px;
 }
 
-.contenido-portada {
-    max-width: 800px;
-}
-
 .rejilla-texto {
     display: grid;
-}
-
-.boton{
-  color: #ffd814;
-  background-color: #ffd814;
-  padding: 5px;
-  border-radius: 5px;
-  font-weight: bolder;
 }
 
 @keyframes parpadeo {
