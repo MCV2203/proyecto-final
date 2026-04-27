@@ -4,6 +4,7 @@ body {
     color: #333;
     background: #f4f4f4;
     margin: 0;
+    overflow: hidden;
 }
 
 .menu-superior {
@@ -39,7 +40,7 @@ body {
 
 .portada {
     height: 60vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), #151d4d), url("billetes.webp");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), #151d4d), url("poli.webp");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -53,191 +54,139 @@ body {
     max-width: 800px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.bloque-info {
-  margin: 0 30px;
-}
-
-.contenedor {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 0;
-    border-radius: 30px;
-}
-
-.cuadro{
-  background-color: #e2e2e2;
-}
-
-.centro {
+/* NAVBAR */
+.menu-superior {
+  background: #151d4d;
+  color: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 4001;
+}
+
+.nombre-web {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .nombre-web span {
-    color: #ffd814;
+  color: #ffd814;
 }
 
-.enlaces-nav li a {
-    color: #000000;
-    text-decoration: none;
-    margin-left: 10px;
-    font-size: 14px;
-    text-transform: uppercase;
-    display: inline-block;
-    transition: 0.3s; 
+.enlaces-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.enlaces-nav li {
+  margin-left: 20px;
+}
+
+.enlaces-nav a {
+  color: #151d4d;
+  text-decoration: none;
+  font-weight: bolder;
+  background-color: #ffd814;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .enlaces-nav li a:hover {
     background-color: #ff8800;
+}
+.enlaces-nav li:hover {
     transform: scale(1.2);
 }
-
-.portada h1 {
-    font-size: 100px;
-    margin-bottom: 20px;
+.enlaces-nav li:hover {
+    transition-duration: 500ms;
 }
 
-.enlaces {
-  background-color: green;
+/* CONTENEDOR PRODUCTO */
+.producto-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 30px;
+  gap: 40px;
 }
 
-.boton-accion {
-    background: #ffd814;
-    color: #000;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: 0.3s;
-    display: inline-block; 
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    width: 900px;
-    border: 0px;
+/* IMÁGENES */
+.imagenes {
+  width: 40%;
 }
 
-.boton-accion:hover {
-    background-color: #ff8800;
-    transform: scale(1.1);
+#imgPrincipal {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
 }
 
-.seccion-padding {
-    padding: 20px 0;
+.miniaturas {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
 }
 
-.fondo-oscuro {
-    background: #151d4d;
-    color: #fff;
+.miniaturas img {
+  width: 70px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-h2 {
-    font-size: 32px;
-    text-align: center;
-    margin-bottom: 20px;
+.miniaturas img:hover {
+  border: 2px solid #ffd814;
 }
 
-.separador {
-    width: 50px;
-    height: 5px;
-    background: #ffd814;
-    border: none;
-    margin: 0 auto 30px;
+/* INFO */
+.info-producto {
+  width: 60%;
 }
 
-.caja-tabla {
-    background: #00000075;
-    padding: 20px;
-    border-radius: 10px;
-    overflow-x: auto;
+.info-producto h1 {
+  font-size: 28px;
 }
 
-.tabla-datos {
-    width: 100%;
-    border-collapse: collapse;
+.precio {
+  font-size: 26px;
+  color: #b12704;
+  font-weight: bold;
 }
 
-.tabla-datos th, .tabla-datos td {
-    padding: 15px;
-    text-align: left;
-    border-bottom: 1px solid #444;
+.descripcion {
+  margin: 20px 0;
+  font-size: 16px;
 }
 
-.tabla-datos th {
-    color: #ffd814;
+.stock {
+  color: green;
+  font-weight: bold;
 }
 
-.etiqueta-estado {
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 12px;
-    font-weight: bold;
+/* BOTONES */
+.btn-comprar {
+  display: block;
+  width: 250px;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffd814;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-.conectado { background: #27ae60; color: white; }
-
-.desconectado { background: #7f8c8d; color: white; }
-
-.error-critico {
-    background: #e73c3c;
-    color: white;
-    animation: parpadeo 1s infinite;
+.btn-comprar:hover {
+  background-color: #f7ca00;
 }
 
-.rejilla-stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+.ahora {
+  background-color: #ff9900;
 }
 
-.tarjeta-stat {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    text-align: center;
-}
-
-.tarjeta-stat img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.rejilla-texto {
-    display: grid;
-}
-
-@keyframes parpadeo {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
+.ahora:hover {
+  background-color: #e68a00;
 }

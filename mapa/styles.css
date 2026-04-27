@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* NAVBAR */
+.menu-superior {
+  background: #151d4d;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 4001;
+}
+
+.nombre-web {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nombre-web span {
+  color: #ffd814;
+}
+
+.enlaces-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.enlaces-nav li {
+  margin-left: 10px;
+}
+
+.enlaces-nav a {
+  color: #151d4d;
+  text-decoration: none;
+  font-weight: bolder;
+  background-color: #ffd814;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.enlaces-nav li a:hover {
+    background-color: #ff8800;
+}
+.enlaces-nav li:hover {
+    transform: scale(1.2);
+}
+.enlaces-nav li:hover {
+    transition-duration: 500ms;
+}
+
+/* CONTENEDOR */
+.contenedor {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+/* MENÚ LATERAL */
+.menu {
+  width: 260px;
+  background: #151d4de8;
+  color: #ffd814;
+  padding: 10px;
+  overflow-y: auto;
+  border-right: 2px solid #151515;
+  z-index: 4001;
+}
+
+/* TITULO MENÚ */
+.menu h2 {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 18px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 10px;
+}
+
+/* CALLES (MEJORADO VISUALMENTE) */
+.calle {
+  padding: 16px 12px;
+  border-bottom: 1px solid #444;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 15px;
+  position: relative;
+}
+
+/* separador visual extra */
+.calle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: transparent;
+  transition: 0.2s;
+}
+
+/* HOVER MÁS PRO */
+.calle:hover {
+  background: #3a3a3a;
+  padding-left: 18px;
+}
+
+.calle:hover::before {
+  background: #ffd814;
+}
+
+/* MAPA */
+.mapa {
+  flex: 1;
+  background: url("images/bcn-sin.png") no-repeat center;
+  background-size: cover;
+}
+
+/* FONDO MODAL */
+.fondo-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  z-index: 3000;
+}
+
+/* MODAL */
+.info {
+  width: 680px;
+  background: #f4f4f4;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+  z-index: 4000;
+}
+
+/* OCULTO */
+.oculto {
+  display: none;
+}
+
+/* BOTÓN CERRAR */
+#cerrar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* ESTADOS */
+.good { color: green; font-weight: bold; }
+.mid { color: orange; font-weight: bold; }
+.bad { color: red; font-weight: bold; }

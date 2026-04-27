@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Civil Point</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="menu-superior">
+    <div class="nombre-web">CIVIL <span>POINT</span></div>
+
+    <ul class="enlaces-nav">
+      <li><a href="../index.html">INICIO</a></li>
+      <li><a href="../tienda/tienda.html">TIENDA</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <div class="contenedor">
+
+    <!-- MENÚ LATERAL -->
+    <div class="menu">
+      <h2>Barcelona</h2>
+
+      <div class="calle" data-zona="rambla">La Rambla</div>
+      <div class="calle" data-zona="passeigdegracia">Passeig de Gràcia</div>
+      <div class="calle" data-zona="diagonal">Avinguda Diagonal</div>
+      <div class="calle" data-zona="raval">El Raval</div>
+      <div class="calle" data-zona="gotico">Barrio Gótico</div>
+      <div class="calle" data-zona="born">El Born</div>
+      <div class="calle" data-zona="barceloneta">Barceloneta</div>
+      <div class="calle" data-zona="sagrada">Sagrada Familia</div>
+      <div class="calle" data-zona="gracia">Gràcia</div>
+      <div class="calle" data-zona="sants">Sants</div>
+      <div class="calle" data-zona="lescorts">Les Corts</div>
+      <div class="calle" data-zona="poblenou">Poblenou</div>
+      <div class="calle" data-zona="santmarti">Sant Martí</div>
+      <div class="calle" data-zona="montjuic">Montjuïc</div>
+    </div>
+
+    <!-- MAPA -->
+    <div class="mapa"></div>
+
+  </div>
+
+  <!-- MODAL -->
+  <div class="fondo-modal oculto" id="fondo"></div>
+
+  <div class="info oculto" id="panelInfo">
+    <button id="cerrar">✖</button>
+    <div id="contenido"></div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
