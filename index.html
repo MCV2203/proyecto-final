@@ -1,114 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Civil Point | Panel SMX</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
-  </head>
-  <body>
+</head>
+<body>
     <nav class="menu-superior">
-      <div class="nombre-web">CIVIL <span> POINT</span></div>
-      <ul class="enlaces-nav">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#proyecto">Proyecto</a></li>
-        <li><a href="#monitoreo">Alertas</a></li>
-        <li><a href="#tecnico">Botones</a></li>
-      </ul>
+        <div class="nombre-web">CIVIL <span> POINT</span></div>
+        <ul class="enlaces-nav">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#proyecto">Proyecto</a></li>
+            <li><a href="#tecnico">Botones</a></li>
+            <li><a href="#monitoreo">Alertas</a></li>
+        </ul>
     </nav>
 
     <header id="inicio" class="portada">
-      <div class="contenido-portada">
-        <h1>CIVIL POINT</h1>
-        <a href=" xxx " class="boton-accion">Ver Mapa</a>
-      </div>
+        <div class="contenido-portada">
+            <h1>CIVIL POINT</h1>
+            <a href="#" class="boton-accion">Ver Mapa</a>
+        </div>
     </header>
 
     <section id="proyecto" class="seccion-padding">
-      <div class="contenedor">
-        <h2>Infraestructura de Botones SOS</h2>
-        <hr class="separador" />
-        <div class="rejilla-texto">
-          <div class="bloque-info">
-            <h3>¿En qué consiste?</h3>
-            <p>
-              Es un despliegue de red diseñado para entornos críticos. Cada nodo
-              actúa como un punto de acceso directo que envía señales de auxilio
-              a un servidor centralizado (Rack) mediante sockets.
-            </p>
-          </div>
-          <div class="bloque-info">
-            <h3>Implementación SMX</h3>
-            <p>
-              Demostración de montaje de hardware, configuración de red local
-              (LAN) y administración de servicios para garantizar que el tiempo
-              de respuesta sea inferior a 1 segundo.
-            </p>
-          </div>
+        <div class="contenedor cuadro">
+            <h2>¿Qué es Civil Point?</h2>
+            <hr class="separador" />
+            <div class="rejilla-texto">
+                <div class="bloque-info">
+                    <h3>¿En qué consiste?</h3>
+                    <p>Es un despliegue de red diseñado para entornos críticos. Cada nodo actúa como un punto de acceso directo que envía señales de auxilio.</p>
+                </div>
+                <div class="bloque-info">
+                    <h3>Implementación SMX</h3>
+                    <p>Configuración de red local (LAN) y administración de servicios para garantizar respuesta inmediata.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-<section id="tecnico" class="seccion-padding">
-      <div class="contenedor">
-        <h2>Prototipos de Boton</h2>
-        <div class="rejilla-stats">
+    <section id="tecnico" class="seccion-padding">
+        <div class="contenedor">
+            <h2>Prototipos de Botón</h2>
+            <div class="rejilla-stats">
+                <div class="tarjeta-stat">
+                    <h4>Terminal Modo Torre (INSTALADOS)</h4>
+                    <img src="images/boton-pie.png" alt="boton torre" />
+                </div>
+                
+                <div class="tarjeta-stat">
+                    <h4>Terminal Modo Pared (INSTALADOS)</h4>
+                    <img src="images/boton-pared.png" alt="boton pared" />
+                </div>
 
-          <div class="tarjeta-stat">
-            <h4>Terminal Tipo Torre</h4>
-            <img
-              src="images/boton-pie.png"
-              alt="boton torre"
-              style="width: 100%; border-radius: 5px"
-            />
-          </div>
-          
-          <div class="tarjeta-stat">
-            <h4>Terminal Tipo Torre</h4>
-            <img
-              src="images/boton-pared.png"
-              alt="boton torre"
-              style="width: 100%; border-radius: 5px"
-            />
-          </div>
-
-          <div class="tarjeta-stat">
-            <h4>Terminal de Mano (PROXIMAMENTE)</h4>
-            <img
-              src="images/boton-mano.png"
-              alt="boton de mano"
-              style="width: 100%; border-radius: 5px"
-            />
-          </div>
+                <div class="tarjeta-stat">
+                    <h4>Terminal De Mano (PROXIMAMENTE)</h4>
+                    <img src="images/boton-mano.png" alt="boton mano" />
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <section id="monitoreo" class="seccion-padding fondo-oscuro">
-      <div class="contenedor">
-        <h2>Panel de Monitorización en Tiempo Real</h2>
-        <p>
-          Estado de los terminales y últimas activaciones registradas en el
-          servidor.
-        </p>
-
-        <div class="caja-tabla">
-          <table class="tabla-datos">
-            <thead>
-              <tr>
-                <th>ID del Nodo</th>
-                <th>Ubicación</th>
-                <th>Estado</th>
-                <th>Ultima Actualización</th>
-              </tr>
-            </thead>
-            <tbody id="tabla-cuerpo"></tbody>
-          </table>
+        <div class="contenedor">
+            <h2>Panel en Tiempo Real</h2>
+            <div class="caja-tabla">
+                <table class="tabla-datos">
+                    <thead>
+                        <tr>
+                            <th>ID Nodo</th>
+                            <th>Ubicación</th>
+                            <th>Estado</th>
+                            <th>Actualización</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-cuerpo"></tbody>
+                </table>
+            </div>
         </div>
-      </div>
     </section>
 
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
