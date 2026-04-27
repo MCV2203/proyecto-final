@@ -7,7 +7,7 @@ body {
 }
 
 .bloque-info {
-  margin-left: 30px;
+  margin: 0 30px;
 }
 
 .contenedor {
@@ -50,11 +50,18 @@ body {
 }
 
 .enlaces-nav li a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 10px;
     font-size: 14px;
     text-transform: uppercase;
+    display: inline-block;
+    transition: 1.3s; 
+}
+
+.enlaces-nav li a:hover {
+    background-color: #ff8800;
+    transform: scale(1.2);
 }
 
 .portada {
@@ -81,11 +88,13 @@ body {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: 0.3s;
+    transition: 1.3s;
+    display: inline-block; 
 }
 
 .boton-accion:hover {
-    background: #ff8800;
+    background-color: #ff8800;
+    transform: scale(1.2);
 }
 
 .seccion-padding {
@@ -177,7 +186,14 @@ h2 {
 
 .rejilla-texto {
     display: grid;
-    gap: 20px;
+}
+
+.boton{
+  color: #ffd814;
+  background-color: #ffd814;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bolder;
 }
 
 @keyframes parpadeo {
