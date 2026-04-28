@@ -1,27 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicio Privado</title>
-    <link rel="stylesheet" href="tienda.css">
-</head>
-<body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Civil Point - Servicio Privado</title>
+    <link rel="stylesheet" href="tienda.css" />
+  </head>
+  <body>
     <nav class="menu-superior">
-        <div class="nombre-web">CIVIL <span> POINT</span></div>
-        <ul class="enlaces-nav">
-            <li><a href="../index.html" class="boton">Inicio</a></li>
-        </ul>
+      <div class="nombre-web">CIVIL <span> POINT</span></div>
+      <ul class="enlaces-nav">
+        <li><a href="../index.html" class="boton-nav">Inicio</a></li>
+      </ul>
     </nav>
 
     <header id="inicio" class="portada">
-        <div class="contenido-portada">
-            <h1>SERVICIO PRIVADO</h1>
-        </div>
+      <div class="contenido-portada">
+        <h1>TIENDA</h1>
+      </div>
     </header>
 
-    <section>
-        <div></div>
+    <section class="seccion-producto">
+      <div class="producto-container">
+        <div class="imagenes">
+          <img id="imgPrincipal" src="../images/boton-mano.png" alt="Producto Principal" />
+
+          <div class="miniaturas">
+            <img src="mesa.png" alt="Vista mesa" onclick="cambiarImg(this)" />
+            <img src="mochila.png" alt="Vista mochila" onclick="cambiarImg(this)" />
+            <img src="ordenador.png" alt="Vista ordenador" onclick="cambiarImg(this)" />
+          </div>
+        </div>
+
+        <div class="info-producto">
+          <h1>Botón de Emergencia Civil Point</h1>
+          <p class="precio">59,99€</p>
+          <p class="descripcion">
+            Dispositivo inteligente diseñado para alertar a servicios de
+            emergencia en zonas urbanas. Instalación rápida y sistema de
+            respuesta inmediata.
+          </p>
+          <p class="stock">✔ En stock</p>
+
+          <div class="acciones">
+            <button class="btn-comprar">Añadir al carrito</button>
+            <button class="btn-comprar ahora">Comprar ahora</button>
+          </div>
+        </div>
+      </div>
     </section>
-</body>
+
+    <script>
+      function cambiarImg(img) {
+        document.getElementById("imgPrincipal").src = img.src;
+      }
+    </script>
+  </body>
 </html>
