@@ -59,7 +59,7 @@ body {
 /* PORTADA */
 .portada {
     height: 60vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), #151d4d), url("poli.webp");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), #151d4d), url("images/poli.webp");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -70,7 +70,7 @@ body {
 }
 
 .contenido-portada h1 {
-    font-size: 3rem;
+    font-size: 100px;
     margin: 0;
 }
 
