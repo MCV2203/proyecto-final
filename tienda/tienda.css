@@ -193,3 +193,18 @@ body {
         height: 40vh;
     }
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* Une los bordes en una sola línea */
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Color gris para filas pares */
+}
