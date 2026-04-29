@@ -1,107 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Civil Point</title>
+    <title>Civil Point | Seguridad Urbana</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" src="images/logo.png" />
-</head>
-<body>
+  </head>
+  <body>
     <nav class="menu-superior">
-        <div class="nombre-web">CIVIL <span> POINT</span></div>
-        <ul class="enlaces-nav">
-            <li><a href="#inicio" class="boton">Inicio</a></li>
-            <li><a href="#proyecto" class="boton">Proyecto</a></li>
-            <li><a href="#tecnico" class="boton">Botones</a></li>
-            <li><a href="#monitoreo" class="boton">Alertas</a></li>
-        </ul>
+      <div class="nombre-web">CIVIL<span>POINT</span></div>
+      <ul class="enlaces-navegacion">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#proyecto">Proyecto</a></li>
+        <li><a href="#tecnico">Botones</a></li>
+        <li><a href="#monitoreo" class="nav-destacado">Alertas</a></li>
+      </ul>
     </nav>
 
     <header id="inicio" class="portada">
-        <div class="contenido-portada">
-            <h1>CIVIL POINT</h1>
-            
+      <div class="contenido-portada">
+        <h1>CIVIL POINT</h1>
+        <p>
+          Innovación tecnológica para una ciudad más segura. Geolocalización SOS
+          en tiempo real.
+        </p>
+        <div class="botones-principales">
+          <a href="mapa/index.html" class="boton-accion"
+            >Ver Mapa Interactivo</a
+          >
+          <a href="tienda/tienda.html" class="boton-accion">Explorar Tienda</a>
         </div>
+      </div>
     </header>
 
-    <section id="proyecto" class="seccion-padding">
-        <div class="contenedor cuadro centro">
-            <div class="rejilla-texto">
-                <a href="mapa/index.html" class="boton-accion">Ver Mapa</a>
-                <a href="tienda/tienda.html" class="boton-accion">Abrir Tienda</a>
-            </div>
+    <section id="proyecto" class="seccion-relleno">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">¿Qué es Civil Point?</h2>
+        <div class="separador"></div>
+        <div class="cuadricula-tarjetas">
+          <div class="tarjeta-informacion">
+            <h3>¿En qué consiste?</h3>
+            <p>
+              Red de botones SOS con señal de geolocalización constante para
+              alertar instantáneamente a las autoridades.
+            </p>
+          </div>
+          <div class="tarjeta-informacion">
+            <h3>Nuestros Modelos</h3>
+            <p>
+              Terminales de pared para estaciones de transporte y tótems estilo
+              torre para espacios abiertos.
+            </p>
+          </div>
+          <div class="tarjeta-informacion">
+            <h3>Ubicaciones Estratégicas</h3>
+            <p>
+              15 puntos críticos en zonas turísticas como La Rambla y el Barrio
+              Gótico.
+            </p>
+          </div>
+          <div class="tarjeta-informacion">
+            <h3>Modelo Freemium</h3>
+            <p>
+              Acceso gratuito en vía pública y servicios premium de
+              geolocalización privada.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="proyecto" class="seccion-padding">
-        <div class="contenedor cuadro">
-            <h2>¿Qué es Civil Point?</h2>
-            <hr class="separador" />
-            <div class="rejilla-texto">
-                <div class="bloque-info">
-                    <h3>¿En qué consiste?</h3>
-                    <p>El producto se basa en una serie de botones de SOS, que cuentan con una señal de geolocalizacion constante para poder alertar a las autoridades de los crimenes.</p>
-                </div>
-                <div class="bloque-info">
-                    <h3>¿Que botones tenemos?</h3>
-                    <p>Contamos con 3 tipos de botones, actualmente hay 2 ya instalados, uno de pared instalados en metros... y despues uno estilo torre, el cual se mantiene fijo en el sitio.</p>
-                </div>
-                <div class="bloque-info">
-                    <h3>-Ubicaciones-</h3>
-                    <p>Tenemos actualmente 15 botones, con las ubicaciones determinadas, tipos de botones que instalaremos. Todos se encuentran en ubicaciones centricas y turisticas como la Rambla, el Barrio Gótico...</p>
-                </div>
-                <div class="bloque-info">
-                    <h3>¿Precio?</h3>
-                    <p>Es un servicio Freemium, ya que es un servicio asociado al gobierno o entidades públicas, asi nuestros productos que se encuentran en la calle, se pueden utilizar de manera gratuita, sin embargo, hay otro servicio/producto que es de pago, que consta de un servicio más privado de geolocalización en caso de emergencia.</p>
-                </div>
+    <section id="tecnico" class="seccion-relleno fondo-gris">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Prototipos de Botón</h2>
+        <div class="cuadricula-estadisticas">
+          <div class="tarjeta-estadistica">
+            <span class="etiqueta etiqueta-verde">INSTALADO</span>
+            <div class="contenedor-imagen">
+              <img src="images/boton-pie.png" alt="boton torre" />
             </div>
+            <h4>Terminal Modo Torre</h4>
+          </div>
+          <div class="tarjeta-estadistica">
+            <span class="etiqueta etiqueta-verde">INSTALADO</span>
+            <div class="contenedor-imagen">
+              <img src="images/boton-pared.png" alt="boton pared" />
+            </div>
+            <h4>Terminal Modo Pared</h4>
+          </div>
+          <div class="tarjeta-estadistica">
+            <span class="etiqueta etiqueta-azul">PRÓXIMAMENTE</span>
+            <div class="contenedor-imagen">
+              <img src="images/boton-mano.png" alt="boton mano" />
+            </div>
+            <h4>Terminal De Mano</h4>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="tecnico" class="seccion-padding">
-        <div class="contenedor">
-            <h2>Prototipos de Botón</h2>
-            <div class="rejilla-stats">
-                
-                <div class="tarjeta-stat">
-                    <h4>Terminal Modo Torre (INSTALADOS)</h4>
-                    <img src="images/boton-pie.png" alt="boton torre" />
-                </div>
-                
-                <div class="tarjeta-stat">
-                    <h4>Terminal Modo Pared (INSTALADOS)</h4>
-                    <img src="images/boton-pared.png" alt="boton pared" />
-                </div>
-
-                <div class="tarjeta-stat">
-                    <h4>Terminal De Mano (PROXIMAMENTE)</h4>
-                    <img src="images/boton-mano.png" alt="boton mano" />
-                </div>
-                
-            </div>
+    <section id="monitoreo" class="seccion-relleno fondo-oscuro">
+      <div class="contenedor">
+        <h2>Panel en Tiempo Real</h2>
+        <div class="caja-tabla">
+          <table class="tabla-datos">
+            <thead>
+              <tr>
+                <th>ID Nodo</th>
+                <th>Ubicación</th>
+                <th>Estado</th>
+                <th>Actualización</th>
+              </tr>
+            </thead>
+            <tbody id="tabla-cuerpo"></tbody>
+          </table>
         </div>
-    </section>
-
-    <section id="monitoreo" class="seccion-padding fondo-oscuro">
-        <div class="contenedor">
-            <h2>Panel en Tiempo Real</h2>
-            <div class="caja-tabla">
-                <table class="tabla-datos">
-                    <thead>
-                        <tr>
-                            <th>ID Nodo</th>
-                            <th>Ubicación</th>
-                            <th>Estado</th>
-                            <th>Actualización</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tabla-cuerpo"></tbody>
-                </table>
-            </div>
-        </div>
+      </div>
     </section>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
